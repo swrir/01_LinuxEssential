@@ -1,0 +1,22 @@
+
+
+
+
+
+# .bas# .bashrc
+
+# User specific aliases and functions
+
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+alias grep='grep --color=auto -i'
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+#
+# Sfecific configuration
+#
+export PS1='\[\e[34;1m\][\u@\h\[\e[33;1m\] \w]\$ \[\e[m\]'
+alias vi='/usr/bin/vim'
+fi
